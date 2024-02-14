@@ -1,4 +1,3 @@
-crave run --no-patch -- "
 
 # Remove local_manifests directory
 rm -rf .repo/localmanifests && /
@@ -16,4 +15,4 @@ source build/envsetup.sh &&
 lunch lineage_ysl-userdebug
 
 # Build confriguration
-make bacon"
+make bacon
