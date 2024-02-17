@@ -1,5 +1,6 @@
 # Remove local_manifests directory
 rm -rf .repo/local_manifests
+rm -rf build
 # Clone local_manifests repository
 git clone https://github.com/krishnaspeace/local_manifests --depth 1 -b main .repo/local_manifests
 repo init --depth 1 -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
