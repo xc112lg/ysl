@@ -10,8 +10,10 @@ rm -rf prebuilts/clang/host/linux-x86
 rm -rf prebuilts/rust
 # repo sync
 repo sync -c -j14 --force-sync --no-clone-bundle --no-tags --prune
-# removing fingerprint
+# fixing fingerprint
 rm -rf vendor/ fingerprint/opensource/interfaces
+git clone https://github.com/aneeshsvha/vendor_fingerprint_opensource_interfaces vendor/fingerprint/opensource/interfaces
+>>>>>>> d0a7f64 (trying to fix fingerpring error)
 # Set up build environment
 source build/envsetup.sh
 # Lunch configuration
