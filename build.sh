@@ -12,6 +12,7 @@ repo init --depth 1 -u https://github.com/crdroidandroid/android.git -b 14.0 --g
 # repo sync
 repo sync -c -j4 --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync
 # fixing fingerprint
+rm -rf vendor/fingerprint/opensource/interfaces
 git clone https://github.com/xiaomi-msm8953-devs/android_vendor_fingerprint_opensource_interfaces vendor/fingerprint/opensource/interfaces
 # Set up build environment
 export BUILD_USERNAME=kr
