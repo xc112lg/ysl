@@ -7,8 +7,8 @@ git clone https://github.com/krishnaspeace/local_manifests.git --depth 1 -b main
 if [ ! 0 == 0 ]
  then   curl -o .repo/local_manifests https://github.com/krishnaspeace/local_manifests.git
  fi
-# Clone crdroid 14
-repo init --depth 1 -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
+# Clone Evolution X udc
+repo init -u https://github.com/Evolution-X/manifest -b udc
 # repo sync
 repo sync -c -j4 --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync
 # fixing fingerprint
@@ -21,6 +21,6 @@ export CRDROID_MAINTAINER=krishnaspeace
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 source build/envsetup.sh
 # Lunch configuration
-lunch lineage_ysl-userdebug
+lunch evolution_ysl-userdebug
 # Build confriguration
-m bacon
+m evolution
