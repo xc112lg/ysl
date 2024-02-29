@@ -3,7 +3,7 @@ rm -rf .repo/local_manifests/ prebuilts/clang/host/linux-x86
 rm -rf build
 rm -rf prebuilts/rust
 # Clone local_manifests repository
-git clone https://github.com/krishnaspeace/local_manifests.git --depth 1 -b main .repo/local_manifests
+git clone https://github.com/krishnaspeace/local_manifests.git --depth 1 -b evo .repo/local_manifests
 if [ ! 0 == 0 ]
  then   curl -o .repo/local_manifests https://github.com/krishnaspeace/local_manifests.git
  fi
