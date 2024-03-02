@@ -23,4 +23,5 @@ source build/envsetup.sh
 # Lunch configuration
 lunch evolution_ysl-userdebug
 # Build confriguration
+make installclean
 m evolution
