@@ -10,7 +10,7 @@ if [ ! 0 == 0 ]
 # Clone Evolution X udc
 repo init -u https://github.com/Evolution-X/manifest -b udc
 # repo sync
-repo sync -c -j4 --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync
+repo sync -c -j4 --force-sync --no-clone-bundle --no-tags
 # fixing fingerprint
 rm -rf vendor/fingerprint/opensource/interfaces
 git clone https://github.com/xiaomi-msm8953-devs/android_vendor_fingerprint_opensource_interfaces vendor/fingerprint/opensource/interfaces
@@ -26,5 +26,6 @@ lunch evolution_ysl-userdebug
 m evolution
 
 # pulling rom and recovery 
-crave pull out/target/product/*/*.zip out/target/product/*/recovery.img
+crave pull out/target/product/*/*.zip 
+crave pull out/target/product/*/recovery.img
 
