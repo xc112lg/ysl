@@ -24,8 +24,3 @@ source build/envsetup.sh
 lunch evolution_ysl-userdebug
 # Build confriguration
 m evolution
-
-# pulling rom and recovery 
-crave pull out/target/product/*/*.zip 
-crave pull out/target/product/*/recovery.img
-
