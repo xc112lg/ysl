@@ -11,9 +11,6 @@ if [ ! 0 == 0 ]
 repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
 # repo sync
 repo sync -c -j4 --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync
-# fixing fingerprint
-rm -rf vendor/fingerprint/opensource/interfaces
-git clone https://github.com/xiaomi-msm8953-devs/android_vendor_fingerprint_opensource_interfaces vendor/fingerprint/opensource/interfaces
 # Set up build environment
 export BUILD_USERNAME=kr
 export BUILD_HOSTNAME=crave
@@ -23,4 +20,5 @@ source build/envsetup.sh
 # Lunch configuration
 lunch rising_begonia-userdebug
 # Build confriguration
+make clean
 m bacon
