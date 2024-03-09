@@ -18,7 +18,7 @@ export BUILD_HOSTNAME=crave
 export RISING_MAINTAINER=krishnaspeace
 source build/envsetup.sh
 # Lunch configuration
-riseup begonia userdebug
+lunch rising_begonia-userdebug
 # Build confriguration
 make clean
-ascend
+m ascend
