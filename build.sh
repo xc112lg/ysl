@@ -7,6 +7,7 @@ git clone https://github.com/krishnaspeace/local_manifests.git --depth 1 -b risi
 if [ ! 0 == 0 ]
  then   curl -o .repo/local_manifests https://github.com/krishnaspeace/local_manifests/tree/rising-begonia
  fi
+rm -rf device/redmi/begonia device/mediatek/sepolicy
 # Clone rising
 repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
 # repo sync
