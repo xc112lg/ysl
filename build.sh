@@ -16,10 +16,9 @@ repo sync -c -j4 --no-clone-bundle --no-tags --optimized-fetch --prune --force-s
 export BUILD_USERNAME=kr
 export BUILD_HOSTNAME=crave
 export RISING_MAINTAINER=krishnaspeace
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 source build/envsetup.sh
 # Lunch configuration
-lunch rising_begonia-userdebug
+riseup begonia userdebug
 # Build confriguration
 make clean
-m bacon
+ascend
