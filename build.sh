@@ -1,5 +1,6 @@
 # Remove directory
-rm -rf .repo/local_manifests/ prebuilts/clang/host/linux-x86
+rm -rf .repo/local_manifests
+rm -rf prebuilts/clang/host/linux-x86
 rm -rf build
 rm -rf prebuilts/rust
 # Clone local_manifests repository
