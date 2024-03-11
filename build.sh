@@ -17,14 +17,18 @@ git clone https://github.com/krishnaspeace/device_redmi_begonia -b rising device
 git clone https://github.com/begonia-dev/android_vendor_redmi_begonia-ims -b 14.0 vendor/redmi/begonia-ims
 git clone https://github.com/begonia-dev/android_packages_apps_RevampedFMRadio -b 14.0 packages/apps/MtkFMRadio
 # Set up build environment
+export ALLOW_MISSING_DEPENDENCIES=true
 export BUILD_USERNAME=kr
 export BUILD_HOSTNAME=crave
 export RISING_MAINTAINER=krishnaspeace
-export RISING_PACKAGE_TYPE="AOSP"
+export RISING_PACKAGE_TYPE := AOSP
 source build/envsetup.sh
 opt_patch
 # Lunch configuration
 riseup begonia userdebug
 # Build confriguration
-make clean
 ascend
+ echo Date and time: 
+ 
+# Print out/build_date.txt
+cat out/build_date.txt
