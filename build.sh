@@ -20,6 +20,7 @@ git clone https://github.com/begonia-dev/android_packages_apps_RevampedFMRadio -
 export BUILD_USERNAME=kr
 export BUILD_HOSTNAME=crave
 export RISING_MAINTAINER=krishnaspeace
+export RISING_PACKAGE_TYPE="AOSP"
 source build/envsetup.sh
 opt_patch
 # Lunch configuration
