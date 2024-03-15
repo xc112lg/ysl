@@ -21,9 +21,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 export BUILD_USERNAME=kr
 export BUILD_HOSTNAME=crave
 export PIXEL_EXPERIENCE_MAINTAINER=krishnaspeace
-export RISING_PACKAGE_TYPE := AOSP
 source build/envsetup.sh
-opt_patch
 # Lunch configuration
 lunch aosp_begonia_userdebug
 # Build confriguration
